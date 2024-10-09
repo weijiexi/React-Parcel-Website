@@ -1,29 +1,121 @@
-/* main.scss */
+@import './variables';
+@import './mixins';
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
+  font-family: $font-stack;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: $secondary-color;
+  padding: 20px;
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
   }
-  
-  header, footer {
-    background-color: #343a40;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-  }
-  
   nav a {
-    margin: 0 15px;
     color: white;
     text-decoration: none;
   }
-  
-  h1 {
-    color: #343a40;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}
+
+.hero {
+  background-color: $primary-color;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  .cta-button {
+    background-color: $secondary-color;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
   }
-  
-  .container {
-    padding: 2rem;
+}
+
+.features {
+  padding: 50px;
+  .feature-list {
+    display: flex;
+    gap: 20px;
   }
-  
+  .feature-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.testimonials {
+  background-color: #eee;
+  padding: 50px;
+  .testimonial-list {
+    display: flex;
+    gap: 20px;
+  }
+  .testimonial-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.about, .contact {
+  padding: 50px;
+}
+
+.team-list {
+  display: flex;
+  gap: 20px;
+  .team-member {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.contact-form {
+  margin-top: 30px;
+  .form-group {
+    margin-bottom: 20px;
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  }
+  .submit-button {
+    background-color: $secondary-color;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+}
+
+.location {
+  margin-top: 30px;
+  iframe {
+    width: 100%;
+    border: none;
+  }
+}

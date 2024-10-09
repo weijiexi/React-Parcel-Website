@@ -1,28 +1,132 @@
 body {
-  background-color: #f8f9fa;
+  color: #333;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
 
-header, footer {
-  color: #fff;
-  text-align: center;
-  background-color: #343a40;
-  padding: 1rem;
+header {
+  background-color: #2ecc71;
+  padding: 20px;
 }
 
-nav a {
+header nav ul {
+  gap: 20px;
+  list-style: none;
+  display: flex;
+}
+
+header nav a {
   color: #fff;
-  margin: 0 15px;
   text-decoration: none;
 }
 
-h1 {
-  color: #343a40;
+footer {
+  text-align: center;
+  color: #fff;
+  background-color: #222;
+  padding: 20px;
 }
 
-.container {
-  padding: 2rem;
+.hero {
+  color: #fff;
+  text-align: center;
+  background-color: #3498db;
+  padding: 50px;
+}
+
+.hero .cta-button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #2ecc71;
+  border: none;
+  padding: 10px 20px;
+}
+
+.features {
+  padding: 50px;
+}
+
+.features .feature-list {
+  gap: 20px;
+  display: flex;
+}
+
+.features .feature-item {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+.testimonials {
+  background-color: #eee;
+  padding: 50px;
+}
+
+.testimonials .testimonial-list {
+  gap: 20px;
+  display: flex;
+}
+
+.testimonials .testimonial-item {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+.about, .contact {
+  padding: 50px;
+}
+
+.team-list {
+  gap: 20px;
+  display: flex;
+}
+
+.team-list .team-member {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+.contact-form {
+  margin-top: 30px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact-form .form-group input, .contact-form .form-group textarea {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+}
+
+.contact-form .submit-button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #2ecc71;
+  border: none;
+  padding: 10px 20px;
+}
+
+.location {
+  margin-top: 30px;
+}
+
+.location iframe {
+  border: none;
+  width: 100%;
 }
 /*# sourceMappingURL=index.2212206d.css.map */
